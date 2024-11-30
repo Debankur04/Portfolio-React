@@ -1,11 +1,13 @@
+'use client'
+
 import { Instagram, Linkedin, Twitter, Facebook,Send, Phone} from 'lucide-react'
 import React from 'react'
 
 const Contacts = () => {
   return (
-    <div>
+    <div className='bg-black text-white p-4 flex justify-around'>
         <div>
-          <div>Contact Me</div>
+          <div className='text-5xl py-8'>Contact Me</div>
           <div className='flex gap-4'>
           <Send/><div>debankurdutta04@gmail.com</div>
           </div>
@@ -13,11 +15,18 @@ const Contacts = () => {
           <Phone /><div>6291221388</div>
           </div>
           <div className='flex gap-4'>
-          <div href='https://www.instagram.com/debankur_04/'><Instagram /></div>
-          <div  href='https://www.linkedin.com/in/debankur-dutta-8871a22b0/'><Linkedin/></div>
+          <div><a  href='https://www.instagram.com/debankur_04/'><Instagram /></a></div>
+          <div  ><a href='https://www.linkedin.com/in/debankur-dutta-8871a22b0/'><Linkedin/></a></div>
           </div>
         </div>
-        <div></div>
+        <div className='w-1/2 my-20'>
+          <div>Name</div>
+          <input type="text"  className='w-full'/>
+          <div>Email</div>
+          <input type="email"  className='w-full'/>
+          <div>Message</div>
+          <textarea name="" id="" className='w-full'></textarea>
+        </div>
     </div>
   )
 }
