@@ -1,6 +1,6 @@
 'use client'
 
-import { Instagram, Linkedin, Twitter, Facebook,Send, Phone} from 'lucide-react'
+import { Send, Phone} from 'lucide-react'
 import React from 'react'
 import ContactUs from './ContactUs'
 import IconsPlace from './IconsPlace'

@@ -5,6 +5,7 @@ import Contacts from "./Components/Contacts";
 import ContactUs from "./Components/ContactUs";
 import IconsPlace from "./Components/IconsPlace";
 import Navbar from "./Components/Navbar";
+import ProjectHeading from "./Components/ProjectHeading";
 import Projects from "./Components/Projects";
 import Seemorebtn from "./Components/Seemorebtn";
 
@@ -13,18 +14,20 @@ export default function Home() {
     <div>
       <Navbar/>
       <BlackHole/>
-      <About/>
-      <div className="bg-black">
-        <div className="flex justify-center text-white text-5xl">Projects</div>
-        <div className="flex justify-evenly my-4">
+      <div className="">
+        <About/>
+      </div>
+      <div className="bg-black py-12">
+        <ProjectHeading/>
+        <div className="flex justify-evenly my-8">
           <Projects/>
           <Projects/>
         </div>
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly my-8">
           <Projects/>
           <Projects/>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center my-12">
           <Seemorebtn/>
         </div>
       </div>
