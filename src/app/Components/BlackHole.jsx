@@ -16,11 +16,12 @@ const BlackHole = () => {
     <div className='h-screen flex justify-around'>
       <div className='text-left px-4 py-72 text-white flex items-center'>
         <div>
-          <div className='text-3xl'>Debankur Dutta</div>
-          <div className='text-xl'>Front-End Engineer</div>
+          <div className='text-5xl'>Debankur Dutta</div>
+          <div className='text-2l'>Front-End Engineer</div>
           <div className='flex gap-2'>
-            <div>NextJs</div>
-            <div>Python</div>
+            <div className=''>NextJs</div>
+            <div className=''>Python</div>
+            <div className=''>ReactJs</div>
           </div>
         </div>
       </div>
