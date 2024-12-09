@@ -20,12 +20,12 @@ const About = () => {
       {/* Right Content Section */}
       <div className='w-full lg:w-3/5 my-12'>
         <AboutHeading/>
-        <div className='my-4'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam asperiores incidunt voluptatem excepturi dolor voluptatibus est ut, nisi ducimus. A accusamus numquam cum sint nobis rerum molestias sapiente error optio!
+        <div className='my-16'>
+          I am Debankur Dutta, a dedicated Front-End Engineer with a deep passion for crafting intuitive and visually appealing websites. I thrive on solving complex problems and transforming ideas into functional, user-centric digital experiences. With a focus on innovation and continuous learning, I aim to create seamless interfaces that not only look great but also perform flawlessly.
         </div>
 
         {/* Tab Navigation */}
-        <div className='flex justify-evenly w-full gap-8 my-8 text-xl'>
+        <div className='flex justify-evenly w-full gap-8 my-8 text-2xl'>
           <button
             className={`hover:text-red-600 ${activeTab === 'skills' && 'text-red-600'}`}
             onClick={() => setActiveTab('skills')}
@@ -49,26 +49,26 @@ const About = () => {
         {/* Tab Content */}
         <div className='my-8'>
           {activeTab === 'skills' && (
-            <div>
+            <div className='w-1/2'>
               <ul>
-                <li><span className='text-red-600'>NextJS</span> <br /> Developing Front-End of Websites</li>
-                <li><span className='text-red-600'>Python</span> <br /> Developing Python projects and AIML</li>
+                <li className='my-4 text-lg'><span className='text-red-600'>NextJS</span> <br /> I use Next.js to build modern, SEO-friendly, and high-performance websites, ensuring a seamless blend of functionality and design.</li>
+                <li className='my-4 text-lg'><span className='text-red-600'>Python</span> <br /> I use Python to develop efficient, versatile solutions, ranging from automation scripts to data-driven applications, ensuring clarity and functionality in every project.</li>
               </ul>
             </div>
           )}
           {activeTab === 'experience' && (
-            <div>
+            <div className='w-1/2'>
               <ul>
-                <li><span className='text-red-600'>CO- Founder OnCode</span> <br /> Freelancing Company around Web Development</li>
-                <li><span className='text-red-600'>4X Hackathon Winner</span> <br /> 2X GNIT, 1X IEM, 1X IIT RPR</li>
+                <li className='my-4 text-lg'><span className='text-red-600'>Co-Founder OnCode</span> <br /> Co-founder of OnCode, a freelancing company dedicated to delivering high-quality, tailored software solutions while fostering innovation and collaboration.</li>
+                <li className='my-4 text-lg'><span className='text-red-600'>4X Hackathon Winner</span> <br />4X Hackathon winner, recognized for delivering innovative and impactful solutions in competitive, fast-paced environments.</li>
               </ul>
             </div>
           )}
           {activeTab === 'education' && (
-            <div>
+            <div className='w-1/2'>
               <ul>
-                <li><span className='text-red-600'>B. Tech CSE</span> <br /> JIS University</li>
-                <li><span className='text-red-600'>Higher Secondary</span> <br /> Aditya Academy Sr. Secondary</li>
+                <li className='my-4 text-lg'><span className='text-red-600'>B. Tech CSE</span> <br />Pursuing a B.Tech degree at JIS University, honing technical expertise and problem-solving skills to excel in the field of technology.</li>
+                <li className='my-4 text-lg'><span className='text-red-600'>Higher Secondary</span> <br /> Completed Higher Secondary education at Aditya Academy Sr. Secondary, building a strong foundation in academics and analytical thinking.</li>
               </ul>
             </div>
           )}
